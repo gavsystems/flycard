@@ -321,13 +321,17 @@ footer{background:var(--navy);color:#fff;padding:52px 0}
 .deal-grid{padding-top:14px}
 .gift-badge{position:absolute;top:-13px;left:22px;padding:4px 14px;border-radius:999px;background:var(--grad);color:#fff;font-size:13px;font-weight:800;box-shadow:0 6px 16px rgba(122,77,255,.4)}
 @media (max-width:600px){.perk.gift{padding:20px 18px}.perk.gift h3{font-size:20px}.perk.gift p{font-size:14px}.gift-badge{left:14px}}
-.form-cta{background:#FFFFFF;color:#12163A;border-radius:24px;padding:34px 28px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px;box-shadow:0 30px 70px rgba(0,0,0,.4)}
+.form-cta{width:100%;max-width:460px;justify-self:center;background:#FFFFFF;color:#12163A;border-radius:24px;padding:34px 28px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px;box-shadow:0 30px 70px rgba(0,0,0,.4)}
 .form-cta-ico{width:64px;height:64px;border-radius:50%;display:grid;place-items:center;color:#fff;background:var(--grad);margin-bottom:4px}
 .form-cta h3{margin:0;font-size:24px;font-weight:900}
 .form-cta p{margin:0;font-size:16px;color:#4A4F6E;max-width:340px}
 .form-cta .btn{width:100%;max-width:340px;min-height:58px;font-size:20px;margin-top:6px}
 .form-cta .small{font-size:13px;opacity:1}
 @media (max-width:600px){.form-cta{padding:26px 20px;border-radius:20px}.form-cta h3{font-size:21px}}
+.form-embed{width:100%;max-width:460px;justify-self:center;padding:6px}
+.form-embed iframe{height:1060px}
+@media (max-width:960px){.form-embed{max-width:520px}}
+@media (max-width:600px){.form-embed iframe{height:1120px}}
 </style>
 </head>
 <body>
@@ -362,9 +366,9 @@ footer{background:var(--navy);color:#fff;padding:52px 0}
     <div class="hero-copy">
       <h1><span>יש לכם גב?</span><span>מעכשיו יש לכם <span class="grad" style="display:inline-block;white-space:nowrap">גם כנפיים!</span></span></h1>
       <p class="hero-sub">הטבה חדשה לעובדות ועובדי גב מערכות</p>
-      <p class="hero-lead">כרטיס האשראי <strong dir="ltr">FLY CARD</strong> <strong>ללא עלות</strong> לכם/ן ולבני ובנות הזוג, ו<strong>כרטיס טיסה מתנה</strong> למצטרפים לראשונה.</p>
+      <p class="hero-lead">כרטיס האשראי <strong dir="ltr">FLY CARD</strong> מבית ישראכרט <strong>ללא עלות</strong> לכם/ן ולבני ובנות הזוג, ו<strong>כרטיס טיסה מתנה</strong> למצטרפים לראשונה.</p>
       <div class="hero-cta">
-        <a class="btn btn-primary" href="#join">להשארת פרטים</a>
+        <a class="btn btn-primary" href="https://forms.office.com/Pages/ResponsePage.aspx?id=yvDH8QzST02SlHwz1dwoMQIOZimmUTVEnHSpgs1WVUhURExLVDdSQVpUMUIwSjBCVkw3UjgxRUg1MS4u">להשארת פרטים</a>
         <a class="btn btn-ghost" href="#deal">מה מקבלים?</a>
       </div>
     </div>
@@ -483,9 +487,11 @@ footer{background:var(--navy);color:#fff;padding:52px 0}
       <p>משאירים שם וטלפון בטופס, ומוקד <span dir="ltr">FLY CARD</span> חוזר אליכם.</p>
       <p><strong>גם בן או בת הזוג רוצים כרטיס?</strong><br>ספרו על זה לנציג / לנציגה בשיחה.</p>
     </div>
-    <div class="form-embed">
-      <iframe src="https://forms.office.com/Pages/ResponsePage.aspx?id=yvDH8QzST02SlHwz1dwoMQIOZimmUTVEnHSpgs1WVUhURExLVDdSQVpUMUIwSjBCVkw3UjgxRUg1MS4u&amp;embed=true" title="טופס השארת פרטים – FLY CARD לעובדי גב מערכות" loading="lazy" allowfullscreen></iframe>
-      <p class="small">לא רואים את הטופס? <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=yvDH8QzST02SlHwz1dwoMQIOZimmUTVEnHSpgs1WVUhURExLVDdSQVpUMUIwSjBCVkw3UjgxRUg1MS4u" target="_blank" rel="noopener">לחצו כאן למילוי</a></p>
+    <div class="form-cta">
+      <span class="form-cta-ico" aria-hidden="true"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg></span>
+      <h3>טופס השארת פרטים</h3>
+      <p>שלוש שאלות קצרות: שם מלא, מספר טלפון ואישור יצירת קשר. פחות מדקה</p>
+      <a class="btn btn-primary" href="https://forms.office.com/Pages/ResponsePage.aspx?id=yvDH8QzST02SlHwz1dwoMQIOZimmUTVEnHSpgs1WVUhURExLVDdSQVpUMUIwSjBCVkw3UjgxRUg1MS4u">למילוי הטופס</a>
     </div>
   </div>
 </section>
